@@ -15,7 +15,7 @@ public class Tester {
 		System.out.println("Enter No. of Players -");
 		n=sc.nextInt();
 		
-		Player[] team=new Player[n]; //upcasting
+		Player[] team=new Cricketer[n]; //upcasting
 		
 		do {
 			System.out.println("0: Exit!");
@@ -39,8 +39,8 @@ public class Tester {
 				//	team[counter].accept(sc);
 			
 					
-					if(team[counter] instanceof Cricketer) {
-						Cricketer c=(Cricketer)team[counter];
+					
+						Cricketer c=team[counter];
 						c.acceptRuns(sc);
 						
 					}
